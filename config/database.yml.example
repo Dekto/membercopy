@@ -23,3 +23,12 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+# /home/deploy/my_app_name/shared/config/database.yml
+production:
+  adapter: postgresql
+  host: 104.248.162.24
+  database: membercopy_production
+  username: deploy
+  password: YOUR_POSTGRES_PASSWORD
+  encoding: unicode
+  pool: 5

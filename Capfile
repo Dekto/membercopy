@@ -36,11 +36,14 @@ require "capistrano/deploy"
 
 
 
+require 'capistrano/rails'
+require 'capistrano/passenger'
+
+#If you are using rbenv add these lines:
  require 'capistrano/rbenv'
  set :rbenv_type, :user
  set :rbenv_ruby, '2.5.3'
 
- require 'capistrano/rails'
 # If you are using rbenv add these lines:
 # require 'capistrano/rbenv'
 # set :rbenv_type, :user
